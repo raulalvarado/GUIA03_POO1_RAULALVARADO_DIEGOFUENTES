@@ -5,24 +5,38 @@
  */
 package com.sv.udb.guia03_poo1_raulalvarado_diegofuentes.clases;
 
+
 /**
  *
  * @author Daniel
  */
 public class Androides {
     
-    String andro;
-
+    String nombre;
+    int energia;
+    
     public Androides() {
     }
 
-    public String getAndro() {
-        return andro;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setAndro(String andro) {
-        this.andro = andro;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-    
+
+    public int getEnergia() {
+        return energia;
+    }
+
+    public void setEnergia(int energia) {
+        this.energia = energia;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + "  " + energia + "%";
+    }
     
 }
